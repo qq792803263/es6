@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id ="app">
+        <!-- <p v-if="seen">现在你看到我了</p>
+
+        <div v-else>
+            Now you don't       -->
+            <!-- </div> -->
+    
+            <!-- <ul>
+                <li v-for="todo2 in msg4">
+                  {{ todo2.text}}
+                </li>
+            </ul> -->
+            <p v-for="(todo2.index) in msg4">
+              建:{{index+1}}--值 : {{todo2.text}}
+            </p>
+      </div>
+        <script> 
+            var vm = new Vue({
+              el :"#app",
+              data:{
+                // seen:false,
+                msg4:[
+                  {text:"asdasadfsa "},
+                  {text:"asdsasdfds" }
+                ]
+              },
+              methods:{
+           
+              }
+            })
+           </script>
+
+    
+      <!-- </div>
+    <div id="app-6">
+    <p>{{ msg }
+      
+    
+    
+    
+    
+    }</p> -->
+     <!-- <h4 v-text="msg"></h4> -->
+     <!-- <h2>3:v-html 解析 html 代码渲染到页面上</h2>   -->
+     <!-- <h4  v-html="msg2"></h4>    -->
+     <!-- <h2> 4:v-bind 单向绑定</h2>
+     <p v-bind:title="msg3">鼠标悬停几秒钟查看此处动态绑定的提示信息！</p>
+     <p v-bind:title=" '我是' '+msg3'">鼠标悬停几秒钟查看此处动态绑定的提示信息！</p> -->
+     <!-- <h2>5: v-on</h2> -->
+     <!-- <button v-on:click="reverseMessage"> 点我逆转消息</button>
+     <button @click="qwz"> 点我 </button> -->
+        <!-- <input v-model="msg"> -->
+  <!-- </div> -->
+
+<!-- <script>
+  var app6 = new Vue({
+    el: '#app-6',
+    data: {
+      // msg: 'Hello Vue!',
+      // msg2:"<p>v-html :我是一个 p 标签</p>",
+      // msg3:'v-bind:页面加载于 '+new Date().toLocaleString(),
+        msg:"欢迎学习Vue"
+    },
+    methods:{
+      reverseMessage:function(){
+        this.msg = this.msg.split('').reverse().join('')
+      },
+      qwz:function(){
+        alert('123123')
+      }
+    }
+  })
+  </script> -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

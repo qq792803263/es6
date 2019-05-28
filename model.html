@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+        <div id ="app">
+                <p>{{ msg5}}</p>
+                <input v-model = "msg5">
+         </div>
+
+         <script> 
+                var vm = new Vue({
+                  el :"#app",
+                  data:{
+                    // seen:false,
+                    // msg4:[
+                    //   {text:"asdasadfsa "},
+                    //   {text:"asdsasdfds" }
+                    // ]
+                msg5:"v-model 双向数据绑定",
+                    
+                  },
+                  methods:{
+               
+                  }
+                })
+               </script>
+
+ </body>
+ </html>
